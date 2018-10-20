@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Word Guess Game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<!-- during the first time loading the page, the body tag will call the initialize_Game() -->
+
+<body onload="initialize_Game()">
+
+
+        <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <h2 class="card-header"> <!--Game main header-->
+                                Can you guess the name of the Disney Character?
+                            </h2>
+                            <div class="card-body">
+                                <p class="card-text">
+                                        Press any key to get started!
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <!-- Card footer -->
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="card">
+                                            <img class="card-img-top" alt="Disney 1" src="./assets/images/disney1.jpg" />
+                                            <div class="card-block">
+                                                <h5 class="card-title">
+                                                    <!-- Card title -->
+                                                </h5>
+                                                <p class="card-text">
+                                                        <h3 class="section-title">Total Wins</h3> 
+                                                        <!-- The div where our wins will be shown. -->
+                                                        <h4 id="showWins"></h4><br> <br>
+                                                </p>
+                                                <br>
+                                                <p class="card-text">
+                                                        <h3 class="section-title">Total Losses</h3> 
+                                                          <!-- The div where our wins will be shown. -->
+                                                        <h4 id="showLosses"></h4><br> <br>
+                                                </p>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="card">
+                                            <img class="card-img-top" alt="Disney 3" src="./assets/images/disney3.jpg" />
+                                            <div class="card-block">
+                                                <h5 class="card-title">
+                                                    <!-- Card title -->
+                                                </h5>
+                                                <p class="card-text">
+                                                        <h3 class="section-title">Here is your Word to Guess!</h3> <br><br><br>
+                                                         <!-- The div where our current word (and guessing progress) will be shown. -->
+                                                        <h4 id="current-word"></h4> <br> <br><br> <br><br>
+                                                </p>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card">
+                                            <img class="card-img-top" alt="disney2" src="./assets/images/disney2.jpg" />
+                                            <div class="card-block">
+                                                <h5 class="card-title">
+                                                    <!-- Card title -->
+                                                </h5>
+                                                <p class="card-text">
+                                                        <h3 class="section-title"> Guesses Remaining</h3> 
+                                                         <!--The div where our remaining guesses will be shown. -->
+                                                        <h4 id="guesses-remaining"></h4><br> <br>
+                                                </p>
+                                                <br>
+                                                <p class="card-text">
+                                                         <h3 class="section-title">Wrong Letters so Far</h3> 
+                                                  <!-- The div where our guesses letters will be shown. -->
+                                                         <h4 id="guessed-letters"></h4> <br> <br>
+                                                </p>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        <script src="assets/javascript/game.js"></script>
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+        <!-- Bootstrap CDN -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    </body>
+
+    </html>
+
+
+
+
+
+    

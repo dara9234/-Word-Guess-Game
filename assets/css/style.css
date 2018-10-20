@@ -1,0 +1,24 @@
+/* .container{
+    background: url("../images/background-disney.jpg") no-repeat fixed center; 
+     
+}
+ */
+ .card-header{
+     text-align: center; font-style: bolder; font-size: 40px; background-color: purple; color: white;
+ }
+
+ .card-text{
+    text-align: center; font-style: bolder; font-size:34px; color: purple;font-family: cursive;
+}
+ 
+h3 {
+    text-align: center; font-style: bolder; font-size:24px; color: purple;
+}
+
+h4 {
+    text-align: center; font-style: bolder; font-size:24px; color: black; font-family: cursive;
+}
+
+#myh{
+    text-align: center; font-style: bolder; font-size:24px; color: black; font-family: cursive;
+}
